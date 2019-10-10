@@ -1,0 +1,29 @@
+body {
+    background-color: darkslategray;
+}
+
+.main-container {
+    height: 800px;
+    width: 800px;
+    border: 2px solid wheat;
+    margin: 0 auto;
+    position: relative;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: wheat;
+    position: absolute;
+    animation-name: moveBox;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveBox {
+    0% {left: 0; top: 0; background-color: wheat; border-radius: 0}
+    25% {left: 75%; top: 0; background-color: red; border-radius: 20%}
+    50% {left: 75%; top: 75%; background-color: green; border-radius: 30%}
+    75% {left: 0; top: 75%; background-color: blue;  border-radius: 50%}
+    100% {left: 0; top: 0; background-color: wheat;}
+}

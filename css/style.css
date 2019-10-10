@@ -1,0 +1,105 @@
+* {
+    overflow:hidden;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    height: 85vh;
+    background-image: 
+    linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.9)),
+    url('../img/close-up-code-coding-160107.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+}
+.main-content {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 30%
+}
+
+h2 {
+    
+    letter-spacing: 0.8rem;
+    color: #fff;
+    font-size: 4rem;
+}
+
+ul {
+    list-style: none;
+    margin: 4rem auto;
+    padding: 0;
+}
+
+ul a {
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+ul li {
+    text-align: center;
+    display: inline-block;
+    height: 7%;
+    width: 20%;
+    padding: 2rem;
+    position: relative;
+    border: 2px solid #fff;    
+    transition: transform 1s;
+    box-sizing: border-box;
+    margin-top: 1rem;
+}
+
+ul li:not(:last-child) {
+    margin-right: 2rem;
+}
+
+ul li:hover {
+    transform: scale(1.1);
+}
+
+.item1 {
+    opacity: 0;
+    animation-name: item1;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes item1{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.item2 {
+    opacity: 0;
+    animation-name: item2;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes item2{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.item3 {
+    opacity: 0;
+    animation-name: item2;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes item3{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/*https://bennettfeely.com/clippy/*/
