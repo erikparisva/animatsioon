@@ -10,26 +10,23 @@
 }
 
 body {
-    background-color: #333;
+    background-color: rgb(252, 210, 238);
 }
-
 .box {
     height: 300px;
     width: 300px;
-    background-color: #fff;
+    background-color: #333;
+    background-size: 100%;
     margin: 0 auto;
     position: relative;
-    top: 10%;
-    transition-duration: 2s;
-    transition-property: all;
+    top: 50px;
+    transition-duration: 0.5s;
 }
-
 .box:hover {
-    background-color: red;
-    border-radius:  50%;
+    background-image: url('../img/e8h5wm6w8f931.jpg');
+    background-size: 100%;
+    /*border-radius: 50%;*/
     transform: rotateY(180deg);
-    /*transform: scale(0.5);*/
-    
-    
+    transform: scale(7);
 }
 

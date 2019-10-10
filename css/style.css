@@ -12,7 +12,7 @@ body {
     height: 85vh;
     background-image: 
     linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.9)),
-    url('../img/close-up-code-coding-160107.jpg');
+    url('../img/wp4031324.png');
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
 }
@@ -27,7 +27,7 @@ body {
 h2 {
     
     letter-spacing: 0.8rem;
-    color: #fff;
+    color: #f5c6f5;
     font-size: 4rem;
 }
 
@@ -39,7 +39,7 @@ ul {
 
 ul a {
     text-decoration: none;
-    color: #fff;
+    color: #f5c6f5;
     
 }
 
@@ -50,7 +50,7 @@ ul li {
     width: 20%;
     padding: 2rem;
     position: relative;
-    border: 2px solid #fff;    
+    border: 2px solid #f5c6f5;   
     transition: transform 1s;
     box-sizing: border-box;
     margin-top: 1rem;
@@ -101,5 +101,3 @@ ul li:hover {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
-
-/*https://bennettfeely.com/clippy/*/
