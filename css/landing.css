@@ -1,8 +1,9 @@
 body {
-    background-color: #394a6d;
-    color: #c0ffb3;
+    background-image: url(../img/pinkbackground.png);
+    color: #51354C;
     text-align: center;
-    line-height: 1.6;
+    line-height: 1.5;
+    font-family: 'Pixel';
 }
 
 .container {
@@ -43,11 +44,11 @@ body {
 
 .btn {
     display: inline-block;
-    color: #fff;
+    color: rgb(253, 186, 248);
     text-decoration: none;
     padding: 1rem;
     margin: 2rem;
-    border: 1px solid #fff;
+    border: 1px solid rgb(253, 186, 248);
     opacity: 0;
     animation-name: button;
     animation-duration: 3s;
@@ -57,4 +58,8 @@ body {
 @keyframes button {
     0% {opacity: 0;}
     100% {opacity: 1;}
+}
+@font-face {
+    font-family: Pixel;
+    src: url(../fonts/VCR_OSD_MONO_1.001.ttf)
 }

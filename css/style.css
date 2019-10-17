@@ -3,18 +3,18 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Pixel';
     margin: 0;
     padding: 0;
 }
 
 .main-container {
-    height: 85vh;
+    height: 100vh;
     background-image: 
-    linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.9)),
-    url('../img/wp4031324.png');
+    linear-gradient(to right bottom, rgba(240, 208, 187, 0.418), rgba(9, 0, 10, 0.2)),
+    url('../img/pinkcity.gif');
     background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+    clip-path: polygon(100% 0, 100% 80%, 32% 100%, 0 100%, 0 0);
 }
 .main-content {
     width: 60%;
@@ -25,10 +25,9 @@ body {
 }
 
 h2 {
-    
-    letter-spacing: 0.8rem;
-    color: #f5c6f5;
-    font-size: 4rem;
+    letter-spacing: 0.4rem;
+    color: #51354C;
+    font-size: 4.5rem;
 }
 
 ul {
@@ -39,8 +38,7 @@ ul {
 
 ul a {
     text-decoration: none;
-    color: #f5c6f5;
-    
+    color: #51354C;
 }
 
 ul li {
@@ -50,54 +48,75 @@ ul li {
     width: 20%;
     padding: 2rem;
     position: relative;
-    border: 2px solid #f5c6f5;   
+    border: 2px solid #51354C;   
+    border-radius: 5px;
     transition: transform 1s;
     box-sizing: border-box;
     margin-top: 1rem;
+    margin-bottom: 1rem;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
 }
 
-ul li:not(:last-child) {
+ul li:not(:last-child){
     margin-right: 2rem;
 }
-
-ul li:hover {
-    transform: scale(1.1);
+ul li:hover{
+    transform: scale(1.2);
+    border-color: #EBB6B0;
+    color: #EBB6B0;
+}
+ul li:hover a{
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    color:#EBB6B0;
 }
 
 .item1 {
     opacity: 0;
-    animation-name: item1;
-    animation-duration: 3s;
+    animation-name: Transition;
+    animation-duration: 2s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 
-@keyframes item1{
+@keyframes Transition{
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
 .item2 {
     opacity: 0;
-    animation-name: item2;
-    animation-duration: 3s;
+    animation-name: Keyframes;
+    animation-duration: 2s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-@keyframes item2{
+@keyframes Keyframes{
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
 
 .item3 {
     opacity: 0;
-    animation-name: item2;
-    animation-duration: 3s;
+    animation-name: Landing;
+    animation-duration: 2s;
     animation-delay: 3s;
     animation-fill-mode: forwards;
 }
 
-@keyframes item3{
+@keyframes Landing{
     0% {opacity: 0;}
     100% {opacity: 1;}
+}
+
+@font-face {
+    font-family: Pixel;
+    src: url(../fonts/VCR_OSD_MONO_1.001.ttf)
 }
