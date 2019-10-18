@@ -28,6 +28,11 @@ h2 {
     letter-spacing: 0.4rem;
     color: #51354C;
     font-size: 4.5rem;
+    animation-name: FloatingHeader;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation: FloatingHeader 6s ease-in-out infinite;
 }
 
 ul {
@@ -119,4 +124,15 @@ ul li:hover a{
 @font-face {
     font-family: Pixel;
     src: url(../fonts/VCR_OSD_MONO_1.001.ttf)
+}
+@keyframes FloatingHeader{
+    0% {
+		transform: translatey(0px);
+	}
+    50% {
+		transform: translatey(-20px);
+    }
+	100% {
+		transform: translatey(0px);
+	}
 }
